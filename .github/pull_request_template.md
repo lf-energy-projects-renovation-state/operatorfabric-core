@@ -1,3 +1,0 @@
-- In release note :
-  -  In chapter :  Features Bugs Tasks
-  -  Text : #xxx ... 
