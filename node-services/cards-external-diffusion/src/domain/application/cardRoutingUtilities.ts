@@ -32,8 +32,7 @@ export default class CardsRoutingUtilities {
                     userWithPerimeters,
                     card.process,
                     perim.state as string
-                ) &&
-                CardsRoutingUtilities.checkFilteringNotification(userWithPerimeters, card.process, perim)
+                )
             );
         });
 
