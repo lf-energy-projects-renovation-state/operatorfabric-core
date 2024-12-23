@@ -277,7 +277,7 @@ class GivenNonAdminUserBusinessconfigControllerShould {
         @WithMockOpFabUser(login="nonAdminUser")
         class DeleteOnlyOneProcess {
         	
-        	static final String bundleName = "first";
+        	static final String BUNDLE_NAME = "first";
         	
         	@BeforeEach
             void setup() throws Exception {
@@ -290,14 +290,14 @@ class GivenNonAdminUserBusinessconfigControllerShould {
         	
         	@Test
             void deleteBundleByNameAndVersionWhichNotBeingDeafult() throws Exception {
-        		ResultActions result = mockMvc.perform(delete("/processes/"+bundleName+"/versions/0.1"));
+        		ResultActions result = mockMvc.perform(delete("/processes/"+ BUNDLE_NAME +"/versions/0.1"));
                 result
                         .andExpect(status().isForbidden());
             }
         	
         	@Test
             void deleteGivenBundle() throws Exception {
-        		ResultActions result = mockMvc.perform(delete("/processes/"+bundleName));
+        		ResultActions result = mockMvc.perform(delete("/processes/"+ BUNDLE_NAME));
                 result
                         .andExpect(status().isForbidden());
             }
