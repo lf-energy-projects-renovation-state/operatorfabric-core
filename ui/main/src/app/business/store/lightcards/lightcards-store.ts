@@ -23,11 +23,11 @@ import {
     tap
 } from 'rxjs';
 import {UsersService} from '@ofServices/users/UsersService';
-import {OpfabEventStreamService} from 'app/business/services/events/opfabEventStream.service';
-import {CardOperationType} from '@ofModel/card-operation.model';
+import {OpfabEventStreamService} from '@ofServices/events/OpfabEventStreamService';
 import {LogOption, LoggerService as logger} from 'app/services/logs/LoggerService';
 import {SelectedCardService} from '@ofServices/selectedCard/SelectedCardService';
 import {AcknowledgeService} from '../../../services/acknowlegment/AcknowledgeService';
+import {CardOperationType} from '@ofServices/events/model/CardOperation';
 
 /**
  *
