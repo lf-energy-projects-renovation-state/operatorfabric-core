@@ -257,7 +257,7 @@ describe('Settings view ', () => {
             settingsView.setSetting('sendCardsByEmail', true);
             settingsView.setSetting('email', null);
 
-            const emailSettingsAreCoherent = settingsView.isEmailAndEmailCheckboxesCoherent();
+            const emailSettingsAreCoherent = settingsView.areEmailAndEmailCheckboxesCoherent();
             expect(emailSettingsAreCoherent).toBeFalse();
         });
     });
