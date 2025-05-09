@@ -34,7 +34,7 @@
         "@fullcalendar/interaction": "6.1.17",
         "@fullcalendar/rrule": "6.1.17",
         "@fullcalendar/timegrid": "6.1.17",
-        "@ng-bootstrap/ng-bootstrap": "17.0.1",
+        "@ng-bootstrap/ng-bootstrap": "18.0.0",
         "@ngx-translate/core": "16.0.4",
         "@popperjs/core": "2.11.8",
         "@swimlane/ngx-charts": "21.1.3",
