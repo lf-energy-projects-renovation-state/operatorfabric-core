@@ -1,4 +1,4 @@
-FROM azul/zulu-openjdk-alpine:21.0.12.1-jre@sha256:e6ee0b1ce0eda3bcbe376e659b8cb11eec9c8a02bd23aec574671c242db63556
+FROM azul/zulu-openjdk-alpine:21.0.12.1-jre@sha256:9eac2f5477c2a2a95f7dda810d9706b3b02dd0f277718f849a66427f0852c97d
 VOLUME /tmp
 ARG JAR_FILE
 RUN apk --no-cache add bash
